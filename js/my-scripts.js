@@ -1,3 +1,11 @@
+function deletebuttonask(){
+    if (confirm('Anda pasti untuk memadam data ini ?')){
+      return true;
+    }else{
+      return false;
+    }
+}
+
 $( document ).ready(function() {
     $( '.select2' ).select2( {
         theme: "bootstrap-5",
