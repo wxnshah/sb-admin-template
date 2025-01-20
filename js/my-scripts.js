@@ -18,7 +18,9 @@ $(document).ready(function() {
     $('.datepicker').datepicker({
         orientation: 'bottom',
         format: "dd/mm/yyyy",
-        width: '100%',
         autoclose: true
+    }).each(function() {
+        var height = $(this).data('height') ? $(this).data('height') : '38px';
+        $(this).css('height', height);
     });
 });
