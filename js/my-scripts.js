@@ -1,3 +1,11 @@
+function logoutask(){
+    if (confirm('Anda pasti untuk log keluar ?')){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function deletebuttonask(){
     if (confirm('Anda pasti untuk memadam data ini ?')){
         return true;
